@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Dados e modelos (versione com DVC/LFS se necessário)
+# (ignora o conteúdo, mas mantém as pastas e seus .gitkeep)
+data/**
+!data/**/
+!data/**/.gitkeep
+models/**/*
+!models/.gitkeep
+
+# Ambiente
+.env
+.DS_Store
+
+# Predições geradas
+data/predictions/
+reports/metrics.json
